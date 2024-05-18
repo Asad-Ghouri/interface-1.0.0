@@ -136,11 +136,11 @@ export default function Header() {
         <HeaderElement>
           <Title>
             <Nod>
-              <Link id="link" href="/">
+              <a id="link" href="https://sapphirechain.group/dex/">
                 {/* <span role="img" aria-label="unicorn">
                 </span> */}
-                <img src="https://itishstudios.net/assert/BST-removebg-preview.png" width={90} alt="" />
-               </Link>
+                <img src="https://sapphirechain.group/wp-content/uploads/2024/05/BOOTH-4.png" width={90} alt="" />
+               </a>
             </Nod>
             <Link id="link" href="https://uniswap.io">
               {/* <h1 id="title">Uniswap</h1> */}
@@ -152,8 +152,12 @@ export default function Header() {
               <VersionLabel isV1={true}>V1</VersionLabel>
             </VersionToggle>
           </TestnetWrapper> */}
+           
         </HeaderElement>
         <HeaderElement>
+        <button className='betabtn'>
+            Beta
+          </button>
           <Web3Status />
         </HeaderElement>
       </HeaderSpan>

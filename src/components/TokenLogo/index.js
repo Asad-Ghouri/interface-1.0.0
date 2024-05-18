@@ -5,7 +5,7 @@ import { isAddress } from '../../utils'
 import { ReactComponent as EthereumLogo } from '../../assets/images/ethereum-logo.svg'
 
 const TOKEN_ICON_API = address =>
-  `https://itishstudios.net/assert/BST-removebg-preview.png`
+  `https://sapphirechain.group/wp-content/uploads/2024/05/BOOTH-4.png`
 const BAD_IMAGES = {}
 
 const Image = styled.img`
@@ -33,14 +33,14 @@ export default function TokenLogo({ address, size = '1rem', ...rest }) {
 
   let path = ''
   if (address === 'ETH') {
-    return <StyledEthereumLogo size={size} />
+    return <img src='https://sapphirechain.group/wp-content/uploads/2024/05/BOOTH-4.png' width={30}/>
   } else if (!error && !BAD_IMAGES[address]) {
     path = TOKEN_ICON_API(address.toLowerCase())
   } else {
     return (
       <Emoji {...rest} size={size}>
         {/* <span role="img" aria-label="Thinking">
-          🤔
+          
         </span> */}
       </Emoji>
     )

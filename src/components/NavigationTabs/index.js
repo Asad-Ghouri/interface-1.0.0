@@ -29,7 +29,13 @@ const tabOrder = [
     path: '/add-liquidity',
     textKey: 'pool',
     regex: /\/add-liquidity|\/remove-liquidity|\/create-exchange.*/
-  }
+  },
+  {
+    path: '/stake',
+    textKey: 'Stake',
+    regex: /\/stake/
+  },
+
 ]
 
 const BetaMessage = styled.div`

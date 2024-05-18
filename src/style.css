@@ -11,3 +11,10 @@ margin-top: -1.5rem!important;
 .cLcToi{
     display: none!important;
 }
+
+.betabtn{
+    margin-right: 20px;
+    padding: 6px;
+    padding-right: 25px;
+    padding-left: 25px;
+}

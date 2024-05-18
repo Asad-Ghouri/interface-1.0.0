@@ -83,6 +83,25 @@ export default function App() {
                           }
                         }}
                       />
+                        <Route exact strict path="/stake" component={() => <Swap params={params} />} />
+                      <Route
+                        exact
+                        strict
+                        path="/stake/:tokenAddress?"
+                        render={({ match, location }) => {
+                          if (isAddress(match.params.tokenAddress)) {
+                            return (
+                              <Swap
+                                location={location}
+                                initialCurrency={isAddress(match.params.tokenAddress)}
+                                params={params}
+                              />
+                            )
+                          } else {
+                            return <Redirect to={{ pathname: '/swap' }} />
+                          }
+                        }}
+                      />
                       <Route exact strict path="/send" component={() => <Send params={params} />} />
                       <Route
                         exact
